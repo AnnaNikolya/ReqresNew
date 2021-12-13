@@ -11,7 +11,7 @@ public class ListUsersTest {
         .when()
         .get("https://reqres.in/api/users?page=2")
         .then()
-          //  .statusCode(10);
+           .statusCode(200)
             //.body("email", equalTo( "lindsay.ferguson@reqres.in"));
             .body("total", equalTo(12));
     }
